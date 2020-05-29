@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Google</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+  <body >
+      <header>
+        <div class="menu">
+            <div class="h_words">
+                <a href="#">Почта</a>
+                <a href="#">Картинки</a>
+            </div>
+            <i class="fa fa-th" title="Приложения Google"></i>
+            <div class="user_logo" id="userLogo" title="Аккаунт Google: Сергей Елисеев
+            (12345@mail.ru)">
+                <h1>C</h1>
+            </div>
+        </div>
+      </header>
+      <div class="content">
+        <img alt="Google" src="images/Google.png" height="92" id="hplogo" style="padding-top:198px" width="272">
+        <div class="input_field">
+            <i class="fa fa-search"></i>
+            <input class="search_input" id="inputField" type="text">
+            <i class="fa fa-times search closed" id="clearCross" title="Очистить"></i>
+            <div class="vertical_line closed" id="clearLine"></div>
+            <img class="keyboard_icon" id="searchKeyboard" src="https://img.icons8.com/metro/26/000000/keyboard.png" title="Экранная клавиатура"/>
+        </div>
+        <div class="offer_buttons">
+            <button class="main_buttons">
+                <span>Поиск в Google</span>
+            </button>
+            <button class="main_buttons">
+                <span>Мне повезёт!</span>
+            </button>
+        </div>
+        <div class="lang_select" >
+            Сервисы Google доступны на разных языках: &nbsp;<a href="#">Беларуская</a>
+        </div>
+      </div>
+      <footer>
+        <div class="country">
+            <div style="padding-top: 11.5px;">Беларусь</div>
+        </div>
+        <div class="info_block">
+            <div class="ib_1">
+                <div>
+                    <a href="#">Реклама</a>
+                    <a href="#">Для бизнеса</a>
+                    <a href="#">Все о Google</a>
+                </div>
+                <div class="HDGW">
+                    <a href="#">Как работает Google Поиск</a>
+                </div>
+            </div>
+            <div class="ib_2">
+                <a href="#">Конфиденциальность</a>
+                <a href="#">Условия</a>
+                <a href="#" id="settings">Настройки</a>
+            </div>
+        </div>
+      </footer>
+      <div class="keyboard_block closed" id="keyboard">
+          <div class="kb_header">
+              <div id='keyboard_move' style="width: 480px; cursor: move; user-select: none;">Русская клавиатура</div>
+              <i class="fa fa-times keyboard" id="closeKeyboard"></i>
+          </div>
+          <div class="buttons">
+              <button class="kb_button" id="b184">
+                  <span>ё</span>
+              </button>
+          </div>
+      </div>
+      <div class="settings closed" id="settings_block">
+        <a href="#" style="margin-top: 16px;">Настройки поиска</a>
+        <a href="#">Расширенный поиск</a>
+        <a href="#">Ваши данные в Поиске</a>
+        <a href="#">История</a>
+        <a href="#">Поиск в справке</a>
+        <a href="#">Отправить отзыв</a>
+      </div>
+      <div class="personal_page closed" id="userPage">
+          <div class="user_logo_block">
+              <span>C</span>
+              <i class="fa fa-camera"></i>
+              <div class="CFL"></div>
+          </div>
+          <div class="user_name">Сергей Елисеев</div>
+          <div class="user_mail">12345@gmail.com</div>
+          <button class="manip_account">
+            <span>Управление аккаунтом Google</span>
+          </button>
+          <div class="add_user">
+            <i class="fa fa-user-plus"></i>
+            <span style="color: #3c4043;font: 500 14px/16px Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;letter-spacing: .25px;margin-top: 3px;">Добавте еще один аккаунт</span>
+          </div>
+          <button class="exit_button">
+            <span>Выйти</span>
+          </button>
+          <div class="user_add_info">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+          </div>
+      </div>
+      <script src="script.js"></script>
+      <script src="DaDKeyboard.js"></script>
+  </body>
+</html>
