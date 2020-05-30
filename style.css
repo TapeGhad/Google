@@ -43,6 +43,7 @@ footer {
 .menu a{
     color: rgba(0,0,0,0.87);
     text-decoration: none;
+    user-select: none;
 }
 
 .menu a:hover{
@@ -441,6 +442,7 @@ footer {
     padding: 8px 16px;
     cursor: pointer;
     margin-left: 48px;
+    user-select: none;
 }
 
 .exit_button{
@@ -462,6 +464,7 @@ footer {
     height: 40px;
     border: 1px solid #dadce0;
     cursor: pointer;
+    user-select: none;
 }
 
 .fa.fa-user-plus{
@@ -483,6 +486,7 @@ footer {
     border-top: 1px solid #dadce0;
     padding-top: 10px;
     text-align: center;
+    user-select: none;
 }
 
 .user_add_info a{
@@ -585,6 +589,7 @@ footer {
     white-space: normal;
     width: 215px;
     cursor: pointer;
+    user-select: none;
 }
 
 
