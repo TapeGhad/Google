@@ -1,4 +1,7 @@
 document.getElementById("inputField").addEventListener("input", function() {
+    document.getElementById('userPage').className = 'personal_page closed'
+    document.getElementById('ga_block').className = 'google_aps_block closed'
+    document.getElementById('settings_block').className = 'settings closed'
     if( document.getElementById('inputField').value.length == 0 ) {
         let y = document.getElementById('clearCross');
         y.className="fa fa-times search closed"
@@ -48,6 +51,8 @@ b184.onclick = function Print() {
 }
 
 settings.onclick = function Settings() {
+    document.getElementById('userPage').className = 'personal_page closed'
+    document.getElementById('ga_block').className = 'google_aps_block closed'
     if( document.getElementById('settings_block').className === 'settings closed' ) {
         document.getElementById('settings_block').className = 'settings open'
     } else {
@@ -55,11 +60,21 @@ settings.onclick = function Settings() {
     }
 }
 
-userLogo.onclick = function Settings() {
+userLogo.onclick = function UserPage() {
+    document.getElementById('ga_block').className = 'google_aps_block closed'
     if( document.getElementById('userPage').className === 'personal_page closed' ) {
         document.getElementById('userPage').className = 'personal_page open'
     } else {
         document.getElementById('userPage').className = 'personal_page closed'
+    }
+}
+
+ga_button.onclick = function Apps() {
+    document.getElementById('userPage').className = 'personal_page closed'
+    if( document.getElementById('ga_block').className === 'google_aps_block closed' ) {
+        document.getElementById('ga_block').className = 'google_aps_block open'
+    } else {
+        document.getElementById('ga_block').className = 'google_aps_block closed'
     }
 }
 

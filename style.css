@@ -87,6 +87,7 @@ footer {
     position: relative;
     left:31%;
     top:9%;
+    user-select: none;
 }
 
 .content {
@@ -494,6 +495,103 @@ footer {
     text-shadow: 0 0 10px #b3b3b3bb;
 }
 
+.google_aps_block{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right:30px;
+    top:60px;
+    width: 320px;
+    height: 435px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: rgba(0,0,0,.2);
+    color: #000;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.google_aps_block.closed{
+    visibility: hidden;
+}
+
+.google_aps_block.open{
+    visibility: visible;
+}
+
+.ga_first_blok{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    background: #fff;
+    color: #000;
+    padding: 20px 0px 0px 10px;
+}
+
+.ga_Sblock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 86px;
+    height: 98px;
+    margin:1px 6px 1px 6px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.ga_Sblock:hover{
+    background-color: rgba(100, 190, 100, 0.1);
+}
+
+.ga_icon {
+    height: 64px;
+    width: 64px;
+    background-image: url(https://ssl.gstatic.com/gb/images/p1_6269e604.png);
+    background-size: 64px 2824px;
+    margin-left: 10px;
+}
+
+.ga_text{
+    color: #404040;
+    display: inline-block;
+    font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    letter-spacing: .09px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+
+.other_apps{
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font: 500 14px/16px 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    margin: 22px 0 20px 20px;
+    outline: 0;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    width: 215px;
+    cursor: pointer;
+}
+
+
+.other_apps:hover{
+    background-color: #1a73e809;
+}
+
 
 @media screen and (max-width: 920px){
     footer {
@@ -592,7 +690,7 @@ footer {
         left:160px;
         bottom: 110px;
     }
-    .personal_page.open, .menu{
+    .personal_page.open, .menu, .google_aps_block.open{
         visibility: hidden;
     }
 }
