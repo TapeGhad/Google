@@ -15,6 +15,24 @@ document.getElementById("inputField").addEventListener("input", function() {
     }
   });
 
+  inputField.onfocus = function FocusInput(){
+    document.getElementById('inputBlock').className = "input_field open";
+    document.getElementById("OfferButtons").className = "offer_buttons closed";
+    document.getElementById("LangSelect").className = "lang_select closed";
+    document.getElementById("OfferButtonsInput").className = "offer_buttons_input";
+    document.getElementById("OI_line").style.display = "block";
+
+  }
+
+  inputField.onblur = function BlurInput(){
+    document.getElementById('inputBlock').className = "input_field"
+    document.getElementById("OfferButtons").className = "offer_buttons";
+    document.getElementById("LangSelect").className = "lang_select";
+    document.getElementById("OfferButtonsInput").className = "offer_buttons_input closed";
+    document.getElementById("OI_line").style.display = "none";
+
+  }
+
   clearCross.onclick = function Clear() {
     document.getElementById('inputField').value = "";
     let y = document.getElementById('clearCross');

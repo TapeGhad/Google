@@ -100,7 +100,7 @@ footer {
 
 .input_field{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 27px;
     width: 89%;
     max-width: 582px;
@@ -109,9 +109,15 @@ footer {
     border-radius: 25px;
 }
 
+.input_field.open {
+    z-index: 50;
+    height: 120px;
+}
+
 .input_field:hover{
     box-shadow: 0 1px 4px 1px rgba(128, 128, 128, 0.3);
 }
+
 .fa.fa-search{
     color: black;
     opacity: 0.5;
@@ -169,7 +175,7 @@ footer {
     margin-top: 11px;
 }
 
-.offer_buttons{
+.offer_buttons, .offer_buttons_input{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -177,6 +183,20 @@ footer {
     max-width: 584px;
     height: 58px;
     padding-top: 18px;
+}
+
+.offer_buttons_input{
+    width: 100%;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.offer_buttons.closed{
+    display: none;
+}
+
+.offer_buttons_input.closed{
+    display: none;
 }
 
 .main_buttons{
@@ -205,6 +225,10 @@ footer {
     margin-top: 19px;
 }
 
+.lang_select.closed{
+    display: none;
+}
+
 .lang_select a{
     text-decoration: none;
 }
@@ -212,6 +236,7 @@ footer {
 .lang_select a:hover {
     text-decoration: underline;
 }
+
 
 .keyboard_block{
     display: flex;

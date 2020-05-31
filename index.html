@@ -25,14 +25,25 @@
       </header>
       <div class="content">
         <img alt="Google" src="images/Google.png" height="92" id="hplogo" style="padding-top:198px" width="272">
-        <div class="input_field">
-            <i class="fa fa-search"></i>
-            <input class="search_input" id="inputField" type="text">
-            <i class="fa fa-times search closed" id="clearCross" title="Очистить"></i>
-            <div class="vertical_line closed" id="clearLine"></div>
-            <img class="keyboard_icon" id="searchKeyboard" src="https://img.icons8.com/metro/26/000000/keyboard.png" title="Экранная клавиатура"/>
+        <div class="input_field" id="inputBlock">
+            <div style="display: flex; flex-direction: row; width: 100%; height: 44px;">
+                <i class="fa fa-search"></i>
+                <input class="search_input" id="inputField" type="text">
+                <i class="fa fa-times search closed" id="clearCross" title="Очистить"></i>
+                <div class="vertical_line closed" id="clearLine"></div>
+                <img class="keyboard_icon" id="searchKeyboard" src="https://img.icons8.com/metro/26/000000/keyboard.png" title="Экранная клавиатура"/>
+            </div>
+            <div style="display:none; width: 94%; margin-left: 15px; height: 0; border: 0.4px solid rgba(167, 167, 167, 0.233);" id="OI_line"></div>
+            <div class="offer_buttons_input closed" id = 'OfferButtonsInput'>
+                <button class="main_buttons">
+                    <span>Поиск в Google</span>
+                </button>
+                <button class="main_buttons">
+                    <span>Мне повезёт!</span>
+                </button>
+            </div>
         </div>
-        <div class="offer_buttons">
+        <div class="offer_buttons" id = 'OfferButtons'>
             <button class="main_buttons">
                 <span>Поиск в Google</span>
             </button>
@@ -40,7 +51,7 @@
                 <span>Мне повезёт!</span>
             </button>
         </div>
-        <div class="lang_select" >
+        <div class="lang_select" id="LangSelect" >
             Сервисы Google доступны на разных языках: &nbsp;<a href="#">Беларуская</a>
         </div>
       </div>
